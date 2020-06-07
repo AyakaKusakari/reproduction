@@ -1,0 +1,202 @@
+body {
+    color: #484848;
+}
+li {
+    list-style: none;
+}
+.padding {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2 {
+    font-weight: bold;
+}
+h5 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Header */
+.mobile-menu {
+    display: none;
+}
+.header-left {
+    display: flex;
+    float: left;
+    margin-left: 25px;
+}
+header ul {
+    text-align: right;
+}
+header ul li {
+    display: inline;
+    vertical-align: middle;
+}
+header ul li a {
+    color: #484848;
+    font-size: 0.9rem;
+}
+input {
+    width: 456px;
+    height: 46px;
+    margin-left: 25px;
+}
+
+/* Alert */
+.alert {
+    color: #484848;
+    font-size: .9rem;
+    border-radius: 0px;
+    background-color: #C1E4E7;
+}
+.fa-comment-dots {
+    color: #4CB0BB;
+}
+
+/* Main */
+.main-img {
+    width: 100%;
+}
+.main {
+    position: relative;
+}
+.main-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 15%;
+}
+.main-wrapper h1 {
+    font-size: 3rem;
+}
+.main-wrapper p {
+    font-size: 1.1rem;
+}
+.main-wrapper button {
+    font-weight: bold;
+    color: #484848;
+    padding: 10px 20px;
+}
+
+/* Three Column */
+.fa-envelope, .fa-stopwatch, .fa-globe {
+    color: #067A88;
+    margin-bottom: 20px;
+}
+.three-column h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.three-column p {
+    opacity: 0.6;
+}
+
+/* Gift */
+.gift {
+    background-color: #067A88;
+    color: #fff;
+}
+.gift a {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+.gift p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+.gift button {
+    padding: 8px 25px;
+    background-color: #FE5A5F;
+    border: #FE5A5F;
+}
+
+/* Footer */
+.footer {
+    font-size: 0.9rem;
+}
+.footer h5 {
+    margin-bottom: 15px;
+}
+.footer ul {
+    padding-left: 0;
+    padding-right: 70px;
+}
+.footer ul li a, .copy-right a, .copy-right p {
+    color: #484848;
+}
+.badge-success {
+    background-color: #056A70;
+    font-weight: normal;
+}
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.copy {
+    display: flex;
+}
+.footer img {
+    margin: 18px 10px 0 0;
+}
+.button {
+    margin-right: 0;
+    margin-left: auto;
+}
+.btn-light {
+    background-color: #fff;
+    color: #484848;
+}
+
+@media screen and (max-width: 1130px) {
+    .padding {
+        width: 400px;
+    }
+    header {
+        height: 60px;
+    }
+    .mobile-menu {
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    header ul li a {
+        display: none;
+    }
+    input {
+        width: 100%;
+        height: 46px;
+        margin-left: 25px;
+    }
+    .alert {
+        font-size: 0.8rem;
+    }
+    .main-img {
+        height: 400px;
+        object-fit: cover;
+    }
+    .main-wrapper {
+        top: 110px;
+        left: 15px
+    }
+    .main-wrapper h1 {
+        font-size: 2.5rem;
+    }
+    .gift button {
+        width: 100%;
+    }
+    .mobile-hide {
+        display: none;
+    }
+    .footer {
+        width: 450px;
+        margin-top: 30px;
+    }
+
+}

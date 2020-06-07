@@ -1,0 +1,3210 @@
+html,
+body {
+	margin: 0;
+    padding: 0;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+body {
+    color: #333333;
+}
+
+a {
+	color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+p,
+h1 {
+    margin: 0;
+	padding: 0;
+}
+
+h2 {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.inner {
+    margin: 0 auto;
+	max-width: 100%;
+    width: 1170px;
+}
+
+.pc-hide {
+   display: none; 
+}
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+/*---------------------------------
+
+  header
+
+---------------------------------*/
+#header {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+#header > .inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 11px;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-logo img {
+    width: 128px;
+}
+
+.header-sub {
+    font-weight: bold;
+    margin-top: 21px;
+    margin-left: 6px;
+}
+
+.contact {
+    display: block;
+    background-color: #da6b64;
+    color: #FFFFFF;
+    margin-top: 2px;
+    border-radius: 30px;
+    width: 318px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+}
+
+.contact:hover {
+    background-color: #d84940;
+}
+
+/*---------------------------------
+
+  main
+
+---------------------------------*/
+.main {
+    height: 500px;
+    width: 100%;
+    background: url(img/main.jpg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main-txt {
+    text-align: center;
+    position  : absolute;
+	top       : 48%;
+	left      : 50%;
+	transform : translate(-50%, -50%);
+    letter-spacing: 1.3px;
+}
+
+.main-txt-top {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 52px;
+    margin-bottom: 7px;
+}
+
+.main-txt img {
+    width: 317px;
+    height: 111px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 33px;
+    line-height: 23px;
+
+}
+
+/*---------------------------------
+
+  conversion
+
+---------------------------------*/
+.conversion {
+    background-color: #EBB94D;
+    text-align: center;
+    padding: 30px 80px 28px 80px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.conversion-top {
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 1.5px;
+    margin-bottom: 17px;
+}
+
+.conversion span {
+    display: block;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    width: 464px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.conversion > .inner > .contact {
+    margin: 46px auto 67px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 55px;
+    font-size: 28px;
+    width: 1028px;
+    letter-spacing: 1px;
+}
+
+.conversion-bottom {
+    font-size: 21px;
+}
+
+.conversion-bottom p {
+    margin-bottom: 33px;
+    letter-spacing: 1.4px;
+}
+
+/*---------------------------------
+
+  introduction
+
+---------------------------------*/
+.introduction {
+    background: url(img/introbottom.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 136px;
+}
+
+.introduction > .inner {
+    text-align: center;
+    width: 856px;
+}
+
+.parenthesis {
+    position: relative;
+    width: 100%;
+    padding: 19px 30px 10px 30px;
+    margin-bottom: 42px;
+    line-height: 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.parenthesis::before,
+.parenthesis::after {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.parenthesis::before {
+    top: 0;
+    left: 0;
+    border-top: 4px solid #EBB94D;
+    border-left: 4px solid #EBB94D;
+}
+.parenthesis::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 4px solid #EBB94D;
+    border-right: 4px solid #EBB94D;
+}
+
+.introduction-txt {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.introduction-txt span {
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #EBB94D 70%);
+}
+
+/*---------------------------------
+
+  about
+
+---------------------------------*/
+.about {
+    background-color: #FEF5E0;
+    position: relative;
+}
+
+.about > .inner {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.circle {
+    background-color: #EBB94D;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFFFFF;
+    position: absolute;
+    top: -40px;
+    left: 47.3%;
+}
+
+.about h2 {
+    line-height: 40px;
+}
+
+.about .parenthesis {
+    padding-top: 12px;
+    margin-bottom: 32px;
+}
+
+.about .parenthesis::before {
+    left: 155px;
+}
+
+.about .parenthesis::after {
+    bottom: 9px;
+    right: 155px;
+}
+
+.focus {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.five-skills, .support {
+    border: 2px solid  #EBB94D;
+    background-color: #FFFFFF;
+    padding-top: 31px;
+    padding-bottom: 22px;
+    border-radius: 5px;
+}
+
+.five-skills p {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    margin-bottom: 30px;
+}
+
+.skill-1 p, .skill-2 p, .skill-3 p, .skill-4 p, .skill-5 p {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.skill-1, .skill-2, .skill-3, .skill-4, .skill-5 {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+.skill-1 {
+    padding-top: 13px;
+}
+
+.skill-3 {
+    padding-top: 11px;
+}
+
+.skill-4 {
+    padding-top: 17px;
+}
+
+.skill-5 {
+    padding-top: 20px;
+}
+
+/*---------------------------------
+
+  aboutsecond
+
+---------------------------------*/
+.aboutsecond {
+    width: 100%;
+    background: url(img/aboutsecondbg.jpg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.aboutsecond > .inner {
+    padding-top: 37px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.aboutsecond h2 {
+    margin-bottom: 15px;
+}
+
+.base {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 41px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.base span {
+    color: #EBB94D;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+
+.step {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 30px;
+    width: 27%;
+}
+
+.step-number {
+    background-color: #EBB94D;
+    border-radius: 5px;
+    letter-spacing: 2.2px;
+}
+
+.step-title, .step p {
+    color: #333333;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.step-title {
+    margin-top: 32px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/*---------------------------------
+
+  aboutthird
+
+---------------------------------*/
+.aboutthird {
+    background-color: #076EA9;
+    text-align: center;
+    padding-top: 41px;
+    padding-bottom: 40px;
+}
+
+.aboutthird p {
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.aboutthird p > span {
+    color: #EBB94D;
+}
+
+/*---------------------------------
+
+  learning
+
+---------------------------------*/
+.learning {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 52px;
+}
+
+.learning h2 > span {
+    font-size: 16px;
+}
+
+.learning-top {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-top: 40px;
+    margin-bottom: 43px;
+}
+
+.learning-img {
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.learning-img img {
+    width: 178px;
+}
+
+.learning p {
+    margin-top: 40px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+/*---------------------------------
+
+  merit
+
+---------------------------------*/
+.merit {
+    background-color: #FEF5E0;
+}
+
+.merit > .inner {
+    padding-top: 40px;
+    padding-bottom: 49px;
+    text-align: center;
+}
+
+.merit .parenthesis {
+    padding-top: 26px;
+    margin-bottom: 30px;
+}
+
+.merit .parenthesis::before {
+    left: 155px;
+}
+
+.merit .parenthesis::after {
+    bottom: 9px;
+    right: 155px;
+}
+
+.merit h2 {
+    margin-top: 14px;
+}
+
+.merit .parenthesis p {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.6px;
+}
+
+.meritboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+}
+
+.meritbox {
+    width: 31.6%;
+    text-align: left;
+}
+
+.meritbox img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+
+.meritbox-title {
+    color: #EBB94D;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    margin-bottom: 9px;
+}
+
+.meritbox p {
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+.support {
+    font-weight: bold;
+    padding-top: 42px;
+    padding-bottom: 50px;
+}
+
+.support-title {
+    color: #EBB94D;
+    font-size: 28px;
+    letter-spacing: 1.6px;
+    margin-bottom: 12px;
+}
+
+.remotework {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.support p {
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+.meritbottom {
+    max-width: 1030px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.meritbottom p {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/*---------------------------------
+
+  teacher
+
+---------------------------------*/
+.teacher {
+    background: url(img/teacherbg.jpg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.teacher > .inner {
+    padding-top: 56px;
+    padding-bottom: 40px;
+    width: 780px;
+}
+
+.teacher p {
+    margin-top: 31px;
+    margin-bottom: 45px;
+    font-size: 17px;
+    letter-spacing: 0.6px;
+}
+
+.teachers {
+    margin-top: 207px;
+}
+
+.teacher-top, .teacher-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-top {
+    margin-bottom: 199px;
+}
+
+.teacher-box {
+    width: 37%;
+    border: 3px solid #FFFFFF;
+    position: relative;
+    padding: 34px 40px 50px 40px;
+}
+
+.teacher-box img {
+    border-radius: 50%;
+    position: absolute;
+    top: -17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.teacher-bottom > .teacher-box img {
+    top: -19%;
+}
+
+.name {
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    line-height: 36px;
+    margin-bottom: 4px;
+}
+
+.teacher-bottom > .teacher-box > .name {
+    margin-left: 0;
+}
+
+.teacher-introduction {
+    text-align: left;
+    letter-spacing: 1.4px;
+    line-height: 25px;
+}
+
+/*---------------------------------
+
+  why
+
+---------------------------------*/
+.why {
+    text-align: center;
+    background-color: #EBB94D;
+    padding-top: 39px;
+    padding-bottom: 25px;
+}
+
+.why-circle {
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    color: #EBB94D;
+    margin: 0 auto;
+}
+
+.why h2 {
+    color: #FFFFFF;
+    line-height: 37px;
+    margin-top: 0px;
+}
+
+.why .parenthesis {
+    margin-bottom: 0;
+}
+
+.why .parenthesis::before, .why .parenthesis::after {
+    border-color: #FFFFFF;
+}
+
+.why .parenthesis::before {
+    left: 290px;
+}
+
+.why .parenthesis::after {
+    bottom: 15px;
+    right: 290px;
+}
+
+.triangle{
+    width: 0px;
+    border-top: 25px solid #EBB94D;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+    margin: 0 auto;
+}
+
+/*---------------------------------
+
+  answer
+
+---------------------------------*/
+.answer {
+    padding-bottom: 23px;
+}
+
+.answer h2, .evidence, .message {
+    text-align: center;
+}
+
+.answer h2 {
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.evidence {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+}
+
+.message {
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.client {
+    display: flex;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+.client img {
+    width: 240px;
+    border: 3px solid #EBB94D;
+}
+
+.client-right {
+    color: #777777;
+    font-style: italic;
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    line-height: 28px;
+}
+
+.client-name {
+    text-decoration : underline;
+    font-size: 15px;
+    margin-top: 5px;
+    letter-spacing: 1.7px;
+}
+
+/*---------------------------------
+
+  class
+
+---------------------------------*/
+.class {
+    background: url(img/classbg.jpg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 72px;
+}
+
+.class h2, .class p, .advance th, .travel th {
+    color: #FFFFFF;
+}
+
+.class h2 {
+    margin-bottom: 9px;
+}
+
+.class p {
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+}
+
+.class-table {
+    display: flex;
+    justify-content: center;
+}
+
+.advance, .travel {
+    width: 25.8%;
+}
+
+.advance {
+    margin-right: 30px;
+}
+
+.advance th, .travel th {
+    background-color: #076EA9;
+}
+
+.advance td, .travel td {
+    background-color: #FFFFFF;
+}
+
+table {
+    border: 2px solid #076EA9;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+}
+
+table thead th,
+table tbody th {
+    font-size: 20px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+}
+
+table tbody td {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.table-top {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+table tbody td {
+    border-bottom: 1px dotted #E5E5E5;
+
+}
+
+table tbody tr:last-child th,
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/*---------------------------------
+
+  classbottom
+
+---------------------------------*/
+.classbottom {
+    background-color: #076EA9;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.classbottom p {
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 32px;
+}
+
+/*---------------------------------
+
+  flow
+
+---------------------------------*/
+.flow {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.flow-img {
+    margin-top: 25px;
+    margin-bottom: 41px;
+    width: 86%;
+}
+
+.flow-box {
+    display: flex;
+    background-color: #FEF5E0;
+    border-radius: 10px;
+    padding: 30px 31px 13px 70px;
+    letter-spacing: 1.5px;
+}
+
+.flow-flight {
+    padding-bottom: 24px;
+}
+
+.flow-personwithlight {
+    padding-bottom: 30px;
+}
+
+.flow-jobsupport {
+    padding-left: 57px;
+    padding-bottom: 30px;
+}
+
+.flow-jobsupport > .flow-right {
+    margin-left: 21px;
+}
+
+.flow-preworks {
+    padding-left: 62px;
+}
+
+.flow-preworks > .flow-right {
+    margin-left: 30px;
+}
+
+.skypeconsulting {
+    width: 98px;
+    margin: 0 15px 21px 15px;
+}
+
+.preworks {
+    width: 113px;
+    margin: 39px 15px 21px 15px;
+}
+
+.flight {
+    width: 104px;
+    margin: 0 10px 22px 15px;
+}
+
+.personwithlight {
+    width: 95px;
+    margin: 0 18px 20px 15px;
+}
+
+.jobsupport {
+    width: 98px;
+    margin: 0 15px 21px 15px;
+}
+
+.flow-left p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.flow-right {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 37px;
+}
+
+.flow-right p {
+    margin-bottom: 21px;
+}
+
+.flow-txt {
+    font-size: 14px;
+}
+
+.flow-bold {
+    font-weight: bold;
+}
+
+/*---------------------------------
+
+  bangkok
+
+---------------------------------*/
+.bangkok {
+    background: url(img/bangkokbg.jpg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 0 90px 135px;
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+}
+
+.bangkok h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.bangkok p {
+    font-size: 14px;
+}
+
+.why-bangkok {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.why-bangkok p {
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+
+.environment {
+    font-size: 20px;
+}
+
+/*---------------------------------
+
+  special
+
+---------------------------------*/
+.special {
+    background-color: #F7C23C;
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 41px;
+}
+.special-support {
+    margin-top: 38px;
+    margin-bottom: 95px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.special-support span {
+    color: #FFFFFF;
+}
+
+.benefit-square {
+    border: 2px solid #FFFFFF;
+    position: relative;
+    padding: 50px 85px;
+}
+
+.benefit-square h2 {
+    position: absolute;
+    top: -1.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 650px;
+    background-color: #F7C23C;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-circle {
+    position: relative;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.benefit-inner {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 48%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width : 250px;
+    text-align: center;
+}
+
+.benefit-title {
+    color: #F7C23C;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.benefit-circle p {
+    font-size: 14px;
+    padding: 11px 15px 0 15px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+}
+
+/*---------------------------------
+
+  specialdetail
+
+---------------------------------*/
+.specialdetail {
+    background: url(img/specialdetail.jpg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 78px;
+}
+
+.specialdetail h2 {
+    margin-bottom: 20px;
+}
+
+.specialdetail-txt {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 33px;
+}
+
+.specialdetail .parenthesis {
+    margin-top: 42px;
+    margin-bottom: 31px;
+}
+
+.specialdetail .parenthesis p {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.specialdetail .parenthesis::before, .specialdetail .parenthesis::after {
+    border-color: #FFFFFF;
+}
+
+.specialdetail .parenthesis::before {
+    top: -4px;
+    left: 155px;
+}
+
+.specialdetail .parenthesis::after {
+    bottom: -12px;
+    right: 155px;
+}
+
+/*---------------------------------
+
+  founder
+
+---------------------------------*/
+.founder {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 84px;
+}
+
+.founder > .inner {
+    width: 860px;
+}
+
+.founder-top {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.top-message {
+    display: flex;
+}
+
+.top-message img {
+    width: 194px;
+    height: 145px;
+}
+
+.keisuke-message {
+    text-align: left;
+    margin-left: 28px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+}
+
+.keisuke-message p {
+    margin-bottom: 7px;
+}
+
+.list, .curriculum {
+    line-height: 22px;
+}
+
+/*---------------------------------
+
+  contactform
+
+---------------------------------*/
+.contactform {
+    background-color: #EBB94D;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 47px;
+}
+
+.contactform > .inner {
+    width: 865px;
+}
+
+.contactform h2 {
+    margin-bottom: 19px;
+}
+
+.contactform p {
+    letter-spacing: 1.5px;
+    margin-bottom: 33px;
+}
+
+/* フォームここから */
+.text-contactform {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 0.4em 0.7em;
+    width: 97.5%;
+    height: 43px;
+    margin-bottom: 26px;
+}
+  
+.text-contactform:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.textarea-contactform {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    height: 80px;
+    padding: 0.7em 0.7em;
+    width: 97.6%;
+    margin-top: 22px;
+    margin-left: 6px;
+}
+  
+.textarea-contactform:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.submit-contactform {
+    -webkit-appearance: none;
+    background-color: #da6b64;
+    background-image: none;
+    border: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 0 1em;
+    padding: 0.4em 2em;
+    text-decoration: none;
+    margin-top: 35px;
+    width: 100%;
+}
+  
+.submit-contactform:hover,
+.submit-contactform:focus {
+    background-color: #d84940;
+}
+  
+.submit-contactform::-moz-foucus-inner {
+    border: none;
+    padding: 0;
+}
+/* フォームここまで */
+
+/*---------------------------------
+
+  questions
+
+---------------------------------*/
+.questions {
+    padding-top: 37px;
+    padding-bottom: 54px;
+    margin-left: 164px;
+    margin-right: 164px;
+}
+
+.questions h2 {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+/* アコーディオンメニュー ここから */
+.accordion-container2 .accordion-title2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-container2 .accordion-title2 p:hover {
+    text-decoration: underline;
+}
+
+.accordion-content2:not(:first-of-type) {
+    display: none;
+}
+
+.accordion-container2 .accordion-title2::after {
+    content: "";
+    position: absolute;
+    right: 26px;
+    top: 34%;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: solid 4px #E5E5E5;
+    border-right: solid 4px #E5E5E5;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.accordion-container2 .accordion-title2.open:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 47%;
+}
+  
+.accordion-container2 .accordion-title2.open::before {
+    transform: rotate(180deg);
+}
+/* アコーディオンメニュー ここまで */
+
+.questions-box {
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+.question p {
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    padding: 16px 17px;
+}
+
+.fa-question-circle {
+    color: #076EA9;
+    font-size: 18px;
+}
+
+.answer-txt {
+    font-weight: 600;
+    padding: 22px 18px 32px 18px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+/*---------------------------------
+
+  footer
+
+---------------------------------*/
+.footer {
+    background-color: #ECECEC;
+    text-align: center;
+    padding-top: 41px;
+    padding-bottom: 24px;
+    font-size: 10px;
+}
+
+.footer a {
+    color: #337AB7;
+}
+
+.footer-top {
+    letter-spacing: 0.5px;
+}
+
+.footer-txt {
+    letter-spacing: 1.1px;
+}
+
+.footer .sns {
+    margin-top: 14px;
+    margin-bottom: 27px;
+}
+
+/*---------------------------------
+
+  floating
+
+---------------------------------*/
+.floating {
+	bottom: 93px;
+	display: none;
+	position: fixed;
+	right: 50px;
+	z-index: 30;
+}
+
+.floating a {
+    background: #ECECEC;
+    color: #333333;
+    display: block;
+    font-size: 33px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    width: 70px;
+}
+
+.floating a:hover {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 1190px) {
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    #header {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+
+    #header > .inner {
+        padding-bottom: 12px;
+    }
+    
+    .header-sub {
+        margin-top: 23px;
+    }
+
+    .contact {
+        width: 262px;
+        height: 41px;
+        line-height: 41px;
+    }
+
+    .main-txt {
+        top: 49%;
+    }
+
+    .main-txt-top {
+        font-size: 26px;
+        line-height: 49px;
+        margin-bottom: 0;
+        letter-spacing: -0.7px;
+    }
+
+    h1 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .conversion {
+        padding-bottom: 34px;
+    }
+
+    .conversion-top {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 12px;
+    }
+
+    .conversion span {
+        font-size: 15px;
+        letter-spacing: -0.5px;
+        width: 380px;
+    }
+
+    .conversion > .inner > .contact {
+        width: 100%;
+        font-size: 18.5px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 17px;
+    }
+
+    .conversion-bottom {
+        font-size: 18px;
+    }
+
+    .conversion-bottom p {
+        margin-bottom: 29px;
+        letter-spacing: 0.05px;
+    }
+
+    .introduction {
+        padding-bottom: 187px;
+    }
+
+    .parenthesis {
+        padding-top: 22px;
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+    }
+
+    .introduction-txt {
+        font-size: 16px;
+    }
+
+    .introduction-bottom {
+        margin-top: 3px;
+    }
+
+    .circle {
+        left: 46.6%;
+    }
+
+    .focus {
+        font-size: 16px;
+    }
+
+    .five-skills {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .five-skills p {
+        font-size: 16px;
+    }
+
+    .skill-1 p, .skill-2 p, .skill-3 p, .skill-4 p, .skill-5 p {
+        font-size: 12px;
+    }
+
+    .aboutsecond h2 {
+        margin-bottom: 10px;
+    }
+
+    .base {
+        font-size: 16px;
+        line-height: 37px;
+        margin-bottom: 23px;
+    }
+
+    .steps {
+        display: block;
+        margin-right: 0;
+    }
+
+    .step {
+        width: 33%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 29px 30px 30px 30px;
+    }
+
+    .step-number {
+        letter-spacing: 1.5px;
+        font-size: 15px;
+    }
+
+    .step-title {
+        margin-top: 30px;
+        font-size: 12px;
+    }
+
+    .step-title {
+        letter-spacing: 0.1px;
+    }
+
+    .step p {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+    }
+
+    .aboutthird {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .aboutthird p {
+        font-size: 16px;
+        line-height: 37px;
+        line-height: 25px;
+    }
+
+    .learning {
+        padding-top: 42px;
+        padding-bottom: 50px;
+    }
+
+    .learning h2 > span {
+        font-size: 14px;
+    }
+
+    .learning-top {
+        font-size: 16px;
+        margin-top: 41px;
+        margin-bottom: 62px;
+    }
+
+    .learning p {
+        margin-top: 62px;
+        font-size: 14px;
+    }
+
+    .merit > .inner {
+        padding-top: 30px;
+        padding-bottom: 44px;
+    }
+
+    .merit .parenthesis {
+        margin-bottom: 28px;
+    }
+
+    .merit .parenthesis::after {
+        bottom: 11px;
+    }
+
+    .merit .parenthesis p {
+        font-size: 16px;
+    }
+
+    .meritboxes {
+        margin-right: 72px;
+        margin-left: 72px;
+    }
+
+    .meritbox {
+        width: 29.2%;
+    }
+    
+    .meritbox-title {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .meritbox p {
+        font-size: 14px;
+        margin-left: 3px;
+        margin-right: 3px;
+        line-height: 22px;
+    }
+
+    .meritboxes {
+        margin-bottom: 68px;
+    }
+
+    .support-title {
+        font-size: 24px;
+        margin-bottom: 11px;
+    }
+
+    .remotework {
+        font-size: 16px;
+    }
+
+    .support {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .support p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .meritbottom {
+        max-width: 800px;
+        margin-top: 41px;
+    }
+
+    .meritbottom p {
+        font-size: 12px;
+        letter-spacing: 0.05px;
+    }
+
+    .teacher > .inner {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .teacher p {
+        margin-top: 33px;
+        font-size: 15px;
+    }
+
+    .teacher-box {
+        padding-top: 35px;
+        padding-bottom: 49px;
+    }
+    
+    .teacher-box img {
+        top: -21%;
+    }
+
+    .teacher-bottom > .teacher-box img {
+        top: -22%;
+    }
+    
+    .name {
+        font-size: 14px;
+        margin-left: 0px;
+        line-height: 33px;
+    }
+
+    .teacher-introduction {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .why-circle {
+        font-size: 20px;
+    }
+
+    .why h2 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .why .parenthesis {
+        padding-top: 16px;
+    }
+
+    .why .parenthesis::before {
+        left: 165px;
+    }
+
+    .why .parenthesis::after {
+        right: 165px;
+    }
+
+    .answer {
+        padding-bottom: 21px;
+    }
+
+    .class {
+        padding-top: 42px;
+    }
+
+    .class h2 {
+        margin-bottom: 12px;
+    }
+
+    .class p {
+        font-size: 14px;
+        margin-bottom: 55px;
+    }
+
+    .advance, .travel {
+        width: 21.5%;
+    }
+
+    .advance {
+        margin-right: 25px;
+    }
+
+    table thead th, table tbody th {
+        font-size: 16px;
+    }
+
+    table tbody td {
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .classbottom p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .flow {
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    .flow-img {
+        margin-top: 30px;
+        width: 94%;
+    }
+
+    .flow > .inner {
+        width: 1067px;
+    }
+
+    .flow-box {
+        padding-top: 31px;
+        padding-bottom: 27px;
+    }
+
+    .flow-right {
+        font-size: 14px;
+    }
+
+    .flow-txt {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+
+    .flowline {
+        width: 76%;
+    }
+
+    .flow-preworks {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .flow-flight {
+        padding-bottom: 30px;
+    }
+
+    .flow-personwithlight {
+        padding-bottom: 29px;
+    }
+
+    .bangkok {
+        padding: 43px 0 50px 60px;
+    }
+
+    .bangkok h2 {
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .bangkok p {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .why-bangkok {
+        margin-top: 24px;
+    }
+
+    .why-bangkok p {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .environment {
+        font-size: 16px;
+    }
+
+    .special {
+        padding-top: 42px;
+    }
+
+    .special-support {
+        font-size: 14px;
+        margin-top: 42px;
+        margin-bottom: 126px;
+    }
+
+    .benefit-square {
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-left: 75px;
+        padding-right: 75px;  
+    }
+
+    .benefit-square h2 {
+        width: 400px;
+        top: -1%;
+    }
+
+    .specialdetail {
+        padding-top: 41px;
+        padding-bottom: 80px;
+    }
+
+    .specialdetail-txt {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .specialdetail .parenthesis p {
+        font-size: 24px;
+    }
+
+    .specialdetail .parenthesis {
+        margin-bottom: 27px;
+    }
+
+    .founder {
+        padding-top: 43px;
+        padding-bottom: 103px;
+    }
+
+    .founder-top {
+        font-size: 16px;
+        margin-top: 36px;
+        margin-bottom: 62px;
+    }
+
+    .founder > .inner {
+        width: 1019px;
+    }
+
+    .top-message img {
+        width: 225px;
+        height: 169px;
+    }
+
+    .keisuke-message {
+        margin-left: 40px;
+    }
+
+    .contactform {
+        padding-top: 43px;
+    }
+
+    .contactform > .inner {
+        width: 833px;
+    }
+
+    .contactform h2 {
+        margin-bottom: 22px;
+    }
+
+    .contactform p {
+        font-size: 14px;
+    }
+
+    .questions {
+        padding-top: 40px;
+        padding-bottom: 55px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .questions h2 {
+        margin-bottom: 42px;
+    }
+
+    .question p {
+        padding: 17px 17px 17px 19px;
+        letter-spacing: 2.5px;
+    }
+
+    .question p, .fa-question-circle {
+        font-size: 15px;
+    }
+
+    .answer-txt {
+        font-size: 14px;
+        padding-left: 20px;
+        padding-bottom: 31px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .class-table {
+        display: block;
+        margin-left: 76px;
+        margin-right: 76px;
+    }
+    
+    .advance, .travel {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .advance {
+        margin-bottom: 4px;
+    }
+
+    .benefits {
+        display: block;
+    }
+
+    .founder {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .top-message {
+        display: block;
+    }
+
+    .top-message img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .keisuke-message {
+        margin-left: 0;
+    }
+
+    .contactform > .inner {
+        width: 537px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .sp-hide {
+        display: none; 
+    }
+
+    .pc-hide {
+        display: block;
+    }
+
+    #header > .inner {
+        padding: 0;
+    }
+
+    .header-left {
+        display: block;
+        margin-top: 8px;
+        margin-left: 11px;
+    }
+
+    .header-sub {
+        margin: 0;
+    }
+
+    .header-logo img {
+        width: 88px;
+    }
+
+    .sp-contact {
+        background-color: #da6b64;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 8px 14px 0px 14px;
+    }
+
+    .sp-contact p {
+        line-height: 12px;
+    }
+
+    .sp-contact p:hover {
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .sp-contact img {
+        width: 20px;
+        height: 25px;
+    }
+
+    .main-txt {
+        top: 49%;
+    }
+
+    .main-txt-top {
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .conversion {
+        padding-top: 14px;
+        padding-bottom: 17px;
+    }
+
+    .conversion > .inner > .contact {
+        height: 64px;
+        line-height: 29px;
+        padding-top: 25px;
+        letter-spacing: -0.5px;
+        margin-bottom: 25px;
+    }
+
+    .conversion-bottom {
+        font-size: 15px;
+    }
+
+    .introduction {
+        padding-top: 29px;
+        padding-bottom: 86px;
+        background-size: contain;
+        background-position: center bottom;
+    }
+
+    .parenthesis {
+        margin-bottom: 26px;
+    }
+
+    .parenthesis::before,
+    .parenthesis::after {
+        width: 31px;
+        height: 31px;
+    }
+    .parenthesis::before {
+        left: 19px;
+    }
+    .parenthesis::after {
+        right: 19px;
+    }
+
+    .introduction h2 {
+        line-height: 39px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .introduction-txt {
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .introduction-middle {
+        margin-top: 4px;
+    }
+
+    .introduction-bottom {
+        margin-top: 5px;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        top: -29px;
+        left: 46%;
+        font-size: 13px;
+    }
+
+    .about .parenthesis {
+        margin-bottom: 0;
+    }
+
+    .about .parenthesis::before {
+        left: 19px;
+        top: -20px;
+    }
+
+    .about h2 {
+        margin-top: 0;
+    }
+
+    .about .parenthesis::after {
+        bottom: 17px;
+        right: 19px;
+    }
+
+    .five-skills {
+        margin-left: 19px;
+        margin-right: 19px;
+        padding-top: 11px;
+        padding-bottom: 26px;
+    }
+
+    .skills {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .skill-1, .skill-2, .skill-3, .skill-4, .skill-5 {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .skill-1, .skill-3, .skill-5 {
+        padding-top: 17px;
+    }
+
+    .skill-1 img, .skill-4 img  {
+        width: 32px;
+    }
+
+    .skill-2 {
+        padding-top: 15px;
+    }
+    
+    .skill-2 img {
+        width: 34px;
+    }
+
+    .skill-3 img {
+        width: 24px;
+    }
+
+    .skill-5 img {
+        width: 77px;
+    }
+
+    .skill-1 p, .skill-2 p, .skill-3 p, .skill-4 p, .skill-5 p {
+        font-size: 10px;
+    }
+
+    .aboutsecond {
+        background: url(img/aboutsecondbgsp.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .aboutsecond > .inner {
+        padding-top: 30px;
+        padding-bottom: 31px;
+    }
+
+    .aboutsecond h2 {
+        line-height: 31px;
+        margin-bottom: 15px;
+    }
+
+    .base {
+        font-size: 12px;
+        letter-spacing: 1.0px;
+        line-height: 25px;
+        margin-bottom: 28px;
+    }
+
+    .step {
+        width: 22.5%;
+        padding: 16px 50px 14px 50px;
+        margin-bottom: 19px;
+    }
+
+    .step-title {
+        margin-top: 14px;
+        margin-bottom: 5px;
+    }
+
+    .aboutthird {
+        padding-top: 19px;
+        padding-bottom: 21px;
+    }
+
+    .aboutthird p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .learning {
+        padding-top: 22px;
+        padding-bottom: 29px;
+    }
+
+    .learning-img {
+        max-width: 614px;
+        width: 100%;
+    }
+
+    .learning-img img {
+        max-width: 120px;
+    }
+
+    .learning-top {
+        margin-bottom: 31px;
+    }
+
+    .learning p {
+        margin-top: 37px;
+    }
+
+    .merit > .inner {
+        padding-bottom: 40px;
+    }
+
+    .merit .parenthesis {
+        margin-bottom: 1px;
+    }
+
+    .merit .parenthesis::before {
+        left: 67px;
+    }
+
+    .merit .parenthesis::after {
+        bottom: 18px;
+        right: 67px;
+    }
+
+    .merit .parenthesis p {
+        line-height: 22px;
+    }
+
+    .meritboxes {
+        display: block;
+        margin-bottom: 42px;
+    }
+
+    .meritbox {
+        margin: 0 auto;
+        width: 97%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .meritbox img {
+        width: 50%;
+        height: 121px;
+    }
+
+    .meritbox p {
+        text-align: left;
+    }
+
+    .support {
+        margin-right: 70px;
+        margin-left: 70px;
+        padding: 12px 10px 18px 10px;
+    }
+
+    .support p {
+        font-size: 10px;
+        line-height: 17px;
+        letter-spacing: 0px;
+    }
+
+    .meritbottom {
+        margin-top: 16px;
+    }
+
+    .meritbottom p {
+        margin-left: 62px;
+        margin-right: 62px;
+        line-height: 19px;
+    }
+
+    .teacher {
+        background: url(img/teacherbgsp.jpg); 
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .teacher > .inner {
+        padding-bottom: 76px;
+    }
+
+    .teacher-top, .teacher-bottom {
+        display: block;
+    }
+
+    .teachers {
+        margin: 130px 60px 0 60px;
+    }
+
+    .teacher-top {
+        margin-bottom: 0;
+    }
+
+    .teacher-box {
+        width: 96%;
+        padding: 35px 10px 19px 10px;
+        margin-bottom: 119px;
+    }
+
+    .teacher-box img {
+        width: 120px;
+        top: -13%;
+    }
+
+    .teacher-bottom > .teacher-box img {
+        top: -14%;
+    }
+
+    .teacher-introduction {
+        letter-spacing: 1.5px;
+    }
+
+    .teacher-last {
+        margin-bottom: 0;
+    }
+
+    .why {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .why .parenthesis {
+        padding-top: 20px;
+    }
+
+    .why .parenthesis::before {
+        left: 19px;
+        top: 10px;
+    }
+
+    .why .parenthesis::after {
+        right: 19px;
+        bottom: 20px;
+    }
+
+    .triangle {
+        border-width: 15px;
+    }
+
+    .evidence {
+        font-size: 14px;
+        margin-bottom: 33px;
+    }
+
+    .message {
+        letter-spacing: 0px;
+        font-size: 12px;
+        margin-bottom: 31px;
+    }
+
+    .answer {
+        padding-bottom: 0;
+    }
+
+    .client {
+        max-width: 727px;
+        margin-bottom: 40px;
+    }
+
+    .client img {
+        width: 30.5%;
+    }
+
+    .client-right {
+        padding: 0 2px 0 14px;
+        line-height: 27px;
+    }
+
+    .class {
+        background: url(img/classbgsp.jpg); 
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 24px;
+        padding-bottom: 45px;
+    }
+
+    .classbottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .flow {
+        padding-bottom: 40px;
+    }
+
+    .flow h2 {
+        margin-bottom: 30px;
+    }
+
+    .flow-box {
+        margin: 0 56px 4px 56px;
+        display: block;
+        padding: 10px 13px 14px 13px;
+        border-radius: 3px;
+    }
+
+    .flow-left {
+        display: flex;;
+    }
+
+    .flow-left img {
+        margin: 0;
+        width: 36px;
+        height: 36px;
+    }
+
+    .flow-left p {
+        font-size: 15px;
+        letter-spacing: 2.2px;
+        margin-left: 15px;
+        margin-top: 6px;
+    }
+
+    .flow-right, .flow-preworks > .flow-right, .flow-jobsupport > .flow-right {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    .flow-preworks, .flow-flight, .flow-personwithlight, .flow-jobsupport {
+        padding-bottom: 10px;
+    }
+
+    .flow-right p {
+        margin-bottom: 12px;
+    }
+
+    .flow-txt {
+        letter-spacing: 0.1px;
+    }
+
+    /* アコーディオンメニュー ここから */
+    .accordion-container .accordion-title {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .accordion-container .accordion-title p:hover {
+        text-decoration: underline;
+    }
+
+    .accordion-content:not(:first-of-type) {
+        display: none;
+    }
+
+    .accordion-container .accordion-title::after {
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 20%;
+        transition: all 0.2s ease-in-out;
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-top: solid 4px #333333;
+        border-right: solid 4px #333333;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    
+    .accordion-container .accordion-title.open:after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 20%;
+    }
+      
+    .accordion-container .accordion-title.open::before {
+        transform: rotate(180deg);
+    }
+    /* アコーディオンメニュー ここまで */
+
+    .bangkok {
+        background: url(img/bangkokbgsp.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-left: 0;
+    }
+
+    .bangkok h2 {
+        text-align: center;
+    }
+
+    .bangkok p, .why-bangkok, .environment {
+        margin-left: 60px;
+    }
+
+    .why-bangkok p {
+        margin-left: 0;
+    }
+
+    .special {
+        padding-top: 22px;
+    }
+
+    .special-support {
+        margin-top: 24px;
+        margin-bottom: 96px;
+    }
+
+    .benefit-square h2 {
+        top: 7%;
+    }
+
+    .benefit {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .benefit-square {
+        margin-right: 54px;
+        margin-left: 54px;
+        padding: 46px 38px 29px 80px;
+    }
+
+    .benefit-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .benefit-inner {
+        width: 80px;
+    }
+
+    .benefit-title {
+        font-size: 20px;
+    }
+
+    .benefit-right {
+        width: 409px;
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        text-align: left;
+        margin-top: 26px;
+    }
+
+    .specialdetail {
+        background: url(img/specialdetailsp.jpg); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .specialdetail h2 {
+        margin-bottom: 22px;
+    }
+
+    .specialdetail-txt {
+        letter-spacing: 1px;
+    }
+
+    .specialdetail .parenthesis {
+        padding-top: 11px;
+        margin-bottom: 16px;
+    }
+
+    .specialdetail .parenthesis p {
+        line-height: 39px;
+    }
+
+    .specialdetail .parenthesis::before {
+        top: -2px;
+        left: 56px;
+    }
+
+    .specialdetail .parenthesis::after {
+        bottom: 5px;
+        right: 57px;
+    }
+
+    .founder {
+        padding: 23px 40px 59px 40px;
+    }
+
+    .founder-top {
+        margin-bottom: 32px;
+    }
+
+    .keisuke-message {
+        margin-top: 39px;
+    }
+
+    .questions h2 {
+        margin-bottom: 23px;
+    }
+
+    .questions {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .question p {
+        padding: 6px 0 8px 9px;
+    }
+
+    .accordion-container2 .accordion-title2::after {
+        right: 16px;
+    }
+
+    .answer-txt {
+        padding-right: 20px;
+    }
+
+    .footer {
+        padding-top: 23px;
+    }
+
+    .floating {
+        bottom: 20px;
+        right: 10px;
+    }
+
+    .floating a {
+        font-size: 16px;
+        height: 52px;
+        line-height: 52px;
+        width: 46px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .header-left {
+        margin-bottom: 3px;
+    }
+
+    .header-sub {
+        font-size: 10px;
+    }
+
+    .main {
+        height: 311px;
+        background: url(img/mainsp.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .main-txt-top {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 1.3px;
+    }
+
+    h1 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .conversion {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .conversion-top {
+        letter-spacing: 0.5px
+    }
+
+    .conversion span {
+        font-size: 14px;
+        width: 360px;
+    }
+
+    .conversion > .inner > .contact {
+        height: 58px;
+        line-height: 31px;
+        margin-top: 25px;
+        padding-top: 17px;
+        padding-bottom: 18px;
+        letter-spacing: 1.5px;
+    }
+
+    .introduction {
+        padding-bottom: 83px;
+    }
+
+    .parenthesis {
+        margin-bottom: 23px;
+    }
+
+    .introduction h2 {
+        line-height: 40px;
+    }
+
+    .introduction-txt {
+        font-size: 15px;
+    }
+
+    .introduction-middle {
+        margin-top: 1px;
+    }
+
+    .introduction-bottom {
+        margin-top: 0;
+    }
+
+    .about .parenthesis {
+        padding-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .about .parenthesis::after {
+        bottom: 11px;
+    }
+
+    .focus {
+        font-size: 15px;
+    }
+
+    .five-skills p {
+        font-size: 15px;
+    }
+
+    .skills {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .skill-1 p, .skill-2 p, .skill-3 p, .skill-4 p, .skill-5 p {
+        font-size: 10px;
+    }
+
+    .aboutsecond > .inner {
+        padding-top: 33px;
+    }
+
+    .aboutsecond h2 {
+        line-height: 22px;
+    }
+
+    .step {
+        width: 70%;
+        margin-bottom: 14px;
+    }
+
+    .step-number {
+        font-size: 12px;
+    }
+
+    .step-title {
+        margin-bottom: 8px;
+    }
+
+    .step p {
+        font-size: 13px;
+    }
+
+    .learning {
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+
+    .learning h2 > span {
+        font-size: 12px;
+    }
+
+    .learning-top {
+        font-size: 15px;
+        margin-top: 44px;
+        margin-bottom: 16px;
+    }
+
+    .learning p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .merit > .inner {
+        padding-bottom: 39px;
+    }
+
+    .merit .parenthesis::before {
+        left: 19px;
+    }
+
+    .merit .parenthesis p {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .merit .parenthesis::after {
+        bottom: 12px;
+        right: 19px;
+    }
+
+    .merit .parenthesis {
+        margin-bottom: 8px;
+    }
+
+    .meritboxes {
+        margin: 0 15px 32px 15px;
+    }
+
+    .meritbox {
+        width: 100%;
+        margin-bottom: 17px;
+    }
+
+    .meritbox img {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 4px;
+    }
+
+    .meritbox-title {
+        font-size: 15px;
+    }
+
+    .meritbox p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        line-height: 20px;    
+    }
+
+    .support {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .support-title {
+        font-size: 18px;
+        margin-bottom: 9px;
+    }
+
+    .remotework {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .support p {
+        line-height: 16px;
+    }
+
+    .meritbottom p {
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    .teacher > .inner {
+        padding-top: 54px;
+        padding-bottom: 10px;
+    }
+
+    .teacher p {
+        margin-top: 38px;
+        font-size: 13px;
+    }
+
+    .teachers {
+        margin: 128px 6px 10px 10px;
+    }
+
+    .teacher-box {
+        padding-top: 34px;
+        margin-bottom: 121px;
+    }
+
+    .teacher-box img {
+        top: -15%;
+        left: 50%;
+    }
+
+    .name {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .teacher-introduction {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .teacher-last {
+        margin-bottom: 0;
+    }
+
+    .why-circle {
+        font-size: 14px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .why h2 {
+        font-size: 14px;
+    }
+
+    .why .parenthesis {
+        padding-bottom: 17px;
+    }
+
+    .evidence {
+        font-size: 12px;
+    }
+    
+    .client {
+        max-width: 750px;
+    }
+    
+    .client img {
+        width: 30.5%;
+        height: 30.5%;
+    }
+    
+    .client-right {
+        width: 66%;
+    }
+
+    .class {
+        padding-top: 31px;
+        padding-bottom: 35px;
+    }
+
+    .class h2 {
+        margin-bottom: 15px;
+    }
+
+    .class p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .class-table {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .advance {
+        margin-bottom: 6px;
+    }
+
+    .table-top {
+        padding-top: 19px;
+    }
+
+    table tbody td {
+        font-size: 12px;
+    }
+
+    .classbottom p {
+        font-size: 15px;
+    }
+
+    .flow {
+        padding-top: 32px;
+    }
+
+    .flow h2 {
+        margin-bottom: 37px;
+    }
+
+    .flow-box {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-bottom: 16px;
+    }
+
+    .flow-preworks, .flow-flight, .flow-personwithlight, .flow-jobsupport {
+        padding-bottom: 10px;
+    }
+
+    .flow-left p {
+        font-size: 14px;
+    }
+
+    .flow-right {
+        font-size: 12px;
+        margin-top: 22px;
+    }
+
+    .bangkok {
+        padding-top: 22px;
+        padding-bottom: 30px;
+    }
+
+    .bangkok p, .why-bangkok, .environment {
+        margin-left: 35px;
+    }
+
+    .why-bangkok p {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .environment {
+        font-size: 15px;
+    }
+
+    .special {
+        padding-top: 12px;
+        padding-bottom: 20px;
+    }
+
+    .special-support {
+        font-size: 12px;
+        margin-top: 27px;
+        margin-bottom: 78px;
+    }
+
+    .benefit-square {
+        margin-right: 14px;
+        margin-left: 14px;
+        padding: 46px 44px 29px 102px;
+    }
+
+    .benefit-square h2 {
+        top: -0.5%;
+        width: 250px;
+    }
+
+    .benefit-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .benefit-inner {
+        width: 60px;
+    }
+
+    .benefit-title {
+        font-size: 12px;
+    }
+
+    .benefit-right {
+        width: 78%;
+        margin-top: 11px;
+        font-size: 12px;
+    }
+
+    .specialdetail {
+        padding-top: 27px;
+        padding-bottom: 60px;
+    }
+
+    .specialdetail h2 {
+        margin-bottom: 20px;
+    }
+
+    .specialdetail-txt {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .specialdetail .parenthesis p {
+        font-size: 18px;
+    }
+
+    .specialdetail .parenthesis::before {
+        left: 30px;
+    }
+
+    .specialdetail .parenthesis::after {
+        right: 30px;
+    }
+
+    .specialdetail .parenthesis {
+        padding-top: 10px;
+    }
+
+    .founder {
+        padding: 33px 15px 44px 15px;
+    }
+
+    .founder-top {
+        font-size: 15px;
+        margin-top: 41px;
+        margin-bottom: 16px;
+    }
+
+    .keisuke-message {
+        margin-top: 11px;
+    }
+
+    .contactform {
+        padding-top: 33px;
+        padding-bottom: 27px;
+    }
+
+    .contactform > .inner {
+        width: 100%;
+    }
+
+    .contactform h2 {
+        margin-bottom: 25px;
+    }
+
+    .contactform p {
+        font-size: 12px;
+    }
+
+    .text-contactform, .textarea-contactform {
+        margin-right: auto;
+        margin-left: auto;
+        width: 93.5%;
+    }
+
+    .submit-contactform {
+        margin-right: auto;
+        margin-left: auto;
+        width: 95.5%;
+    }
+
+    .questions {
+        padding-top: 32px;
+        padding-bottom: 34px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .questions h2 {
+        margin-bottom: 26px;
+    }
+    
+    .question p {
+        font-size: 14px;
+        padding-top: 7px;
+        padding-left: 8px;
+    }
+
+    .answer-txt {
+        font-size: 12px;
+    }
+}
